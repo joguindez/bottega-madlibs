@@ -3,9 +3,32 @@ import React, { Component } from 'react';
 import Input from './input';
 
 class Card extends Component {
+
+    constructor() {
+        super()
+
+        this.state = {
+            color: 'Blue',
+            pluralNoun: ''
+        }
+    }
+
+    handleInputChange() {
+        this.setState({ color: 'red' })
+    }
+
+
     render() {
+
         return (
-            <div className="card">
+            <div className="cards">
+                <h1>{this.state.color}</h1>
+                <input/>
+            </div>
+        )
+        return (
+            <div className="cards">
+                <h1>{this.state.color}</h1>
                 { Input('Color') }
                 { Input('Plural Noun') }
             </div>
