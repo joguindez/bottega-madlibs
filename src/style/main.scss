@@ -58,15 +58,17 @@
     width: 1240px;
     box-shadow: 0 4px 30px 0 rgba(0, 0, 0, .06);
     border-radius: 7px;
-
+    
     display: grid;
     grid-template-rows: 1fr, 50px;
+    background-color: white;
 
     &__inputs {
-        background-color: skyblue;
+        //background-color: skyblue;
         display: grid;
         grid-template-rows: repeat(4, 27fr);
         grid-template-columns: repeat(4, 1fr);
+
         justify-items: center;
         align-items: center;
     }
