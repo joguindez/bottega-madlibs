@@ -9,7 +9,7 @@ import './style/main.scss';
 function main() {
   ReactDOM.render(
     <Home />
-    , document.querySelector('.app-wrapper'));
+    , document.querySelector('.Madlibs'));
 }
 
 document.addEventListener('DOMContentLoaded', main);
